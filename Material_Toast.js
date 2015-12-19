@@ -43,6 +43,9 @@ function Toast_Material(options){
 		else if(alignStyle == "left"){
 			var directionStyle = "ltr";
 		}
+		else if(alignStyle == "center"){
+			var directionStyle = "ltr";
+		}
 	}
 	else{
 		var alignStyle = "left";
