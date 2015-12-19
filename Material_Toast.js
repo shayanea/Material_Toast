@@ -57,6 +57,12 @@ function Toast_Material(options){
 	else{
 		var contentText = "";
 	}
+	if(isset(options.updown)){
+		var heightStyle = options.updown + ":15px;";
+	}
+	else{
+		var heightStyle = "bottom : 15px";
+	}
 	if($('.toast_material').length){
 		if($('.toast_open').length){
 			$('.toast_material').addClass("animated fadeOutDown");
@@ -64,14 +70,15 @@ function Toast_Material(options){
 		else{
 			$('.toast_material').remove();
 		}	
-		$('body').append('<div class="toast_material toast_open animated fadeInUp" style="'+ positionStyle +';text-align:'+ alignStyle +'"><p style="direction:'+ directionStyle +'">'+ contentText +'</p></div>');
+		$('body').append('<div class="toast_material toast_open animated fadeInUp" style="'+ positionStyle +';text-align:'+ alignStyle +';'+ heightStyle +'"><p style="direction:'+ directionStyle +'">'+ contentText +'</p></div>');
 		setTimeout(function() {
 			$('.toast_material').removeClass("fadeInUp");
 			$('.toast_material').addClass("fadeOutDown");
 		}, 3000);
 	}
 	else{
-		$('body').append('<div class="toast_material toast_open animated fadeInUp" style="'+ positionStyle +';text-align:'+ alignStyle +'"><p style="direction:'+ directionStyle +'">'+ contentText +'</p></div>');
+		console.log(heightStyle);
+		$('body').append('<div class="toast_material toast_open animated fadeInUp" style="'+ positionStyle +';text-align:'+ alignStyle +';'+ heightStyle +'"><p style="direction:'+ directionStyle +'">'+ contentText +'</p></div>');
 		setTimeout(function() {
 			$('.toast_material').removeClass("fadeInUp");
 			$('.toast_material').addClass("fadeOutDown");
