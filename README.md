@@ -9,7 +9,12 @@ For Usage: Just Add Css & Js File To Your Html Page
 
 Js Function Syntax : 
 
-Toast_Material({content : "Simple Toast!",updown:"bottom",position:"center",align:"center"});
+Toast_Material({
+  content : "Simple Toast!",
+  updown:"bottom",
+  position:"center",
+  align:"center"
+});
 
 updown : "bottom","top";
 
