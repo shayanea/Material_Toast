@@ -21,7 +21,16 @@ function isset(variable) {
 }
 function Toast_Material(options){
 	if(isset(options.position)){
-		var positionStyle = options.position + ":16px";
+		if(options.position == "right" || options.position == "left"){
+			var positionStyle = options.position + ":16px";
+		}
+		else if(options.position == "center"){
+			var positionStyle="";
+			$(document).ready(function(){
+				$('.toast_material').css({'left': '50%'});
+				$(".toast_material").css({'margin-left': -$(".toast_material").outerWidth() / 2 + 'px'});
+			});
+		}		
 	}
 	else{
 		var positionStyle = "left : 16px";
