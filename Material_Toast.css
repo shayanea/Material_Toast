@@ -1,17 +1,17 @@
 .toast_material{
-	background-color: #000;
-	height: auto;
-	min-width: 220px;
-	max-width: 600px;
-	z-index: 90;
-	border-radius: 2px;
-	opacity: 1;
-	position: fixed;
-	padding: 5px 16px;
-	bottom: 15px;
-	/*left: 15px;*/
-	margin: 0px;
-	box-sizing: border-box;
+  background-color: #000;
+  height: auto;
+  min-width: 220px;
+  max-width: 600px;
+  z-index: 90;
+  border-radius: 2px;
+  opacity: 1;
+  position: fixed;
+  padding: 5px 16px;
+  bottom: 15px;
+  /*left: 15px;*/
+  margin: 0px;
+  box-sizing: border-box;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
@@ -22,30 +22,30 @@
     background-color: #323232;
 }
 .toast_material p{
-	padding: 0 16px;
-	color: #fff;
-	font-size: 16px;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 16px;
   font-family: inherit;
   margin: 0;
   width: 100%;
 }
 @media (max-width: 768px){
-	.toast_material{
-		min-width: 100%;
-		left: 0px;
-		bottom: 0px;
+  .toast_material{
+    min-width: 100%;
+    left: 0px;
+    bottom: 0px;
     border-radius: 0px;
-	}
-	.toast_material p{
+  }
+  .toast_material p{
     padding: 0px 12px;
-		font-size: 12px;
-	}
+    font-size: 12px;
+  }
 }
 .animated {
-	-webkit-animation-duration: 0.5s;
-	animation-duration: 0.5s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 @-webkit-keyframes fadeInUp {
   from {
@@ -133,4 +133,3 @@
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
 }
-Material_Toast
