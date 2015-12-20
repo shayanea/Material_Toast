@@ -1,9 +1,9 @@
 # Material_Toast
 This Is My First Repository
 
-You Can Use This Library In Web Application & Mobile Application
+You Can Use This Library In Web & Mobile Applications
 
-For Notice User About What Is Done In Application
+To notice the user about the latest changes that are done in the application
 
 For Usage: Just Add Css & Js File To Your Html Page
 
